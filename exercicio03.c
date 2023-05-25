@@ -17,8 +17,12 @@ int main ()
 	}
 	
 	//ler os dois valores X e Y
-	printf("Informe o valor de X e Y:\n");
-	scanf("%d %d", &X, &Y);
+	do
+	{
+		printf("Informe o valor de X e Y:\n");
+		scanf("%d %d", &X, &Y);
+	} while (X < 0 || Y < 0);
+	
 	
 	//verificar se os valores de X e Y sao validos
 	if(X >= 0 && X < 8 && Y >= 0 && Y < 8)
